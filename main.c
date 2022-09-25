@@ -6,6 +6,7 @@
 
 int main(void)
 {
+    SYSCTL_RCGC2_R = SYSCTL_RCGC2_GPIOF;
 
 	GPIO_PORTF_DIR_R = 0x08;
 	GPIO_PORTF_DEN_R = 0x08;
